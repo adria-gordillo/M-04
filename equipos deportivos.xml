@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE federacio [
+    <!ELEMENT federacio (equip+)>
+    <!ELEMENT equip (nom, any_fundacio, fundador?, estadi, palmares?, jugadors)>
+    <!ATTLIST equip id_eqip ID #REQUIRED>
+    <!ATTLIST equip presupost CDATA "500.000€">
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT any_fundacio (#PCDATA)>
+    <!ELEMENT fundador (#PCDATA)>
+    <!ELEMENT estadi (#PCDATA)>
+    <!ELEMENT palmares (liga*, copa*)>
+    <!ELEMENT liga (#PCDATA)>
+    <!ATTLIST liga any_liga CDATA #REQUIRED>
+    <!ELEMENT copa (#PCDATA)>
+    <!ATTLIST copa any_copa CDATA #REQUIRED>
+    <!ELEMENT jugadors (jugador+)>
+    <!ELEMENT jugador (nom, dorsal, edat, eqips_anteriors?)>
+    <!ATTLIST jugador posicio (porter | defensa | migcampista | davanter) EMPTY>
+    <!ATTLIST jugador tipo (comunitari | extracomunitari) #REQUIRED>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT dorsal (#PCDATA)>
+    <!ELEMENT edat (#PCDATA)>
+    <!ELEMENT eqips_anteriors EMPTY>
+    <!ATTLIST equips_anteriors IDREFS #REQUIRED>
+]>
+
+<!DOCTYPE cartellera [
+    <!ELEMENT cartellera (peliculas)>
+    <!ELEMENT peliculas (pelicula+)>
+    <!ELEMENT pelicula (titol, titol_original?, nacionalitat, genere, (classificacio | sense_calificar), sinopsi, director, repartiment, web?, cartell?)>
+    <!ATTLIST pelicula codi ID #REQUIRED>
+    <!ATTLIST pelicula durada CDATA #REQUIRED>
+    <!ATTLIST pelicula any CDATA "2022">
+    <!ELEMENT titol (#PCDATA)>
+    <!ELEMENT titol_original (#PCDATA)>
+    <!ELEMENT nacionalitat (#PCDATA)>
+    <!ELEMENT genere (#PCDATA)>
+    <!ELEMENT classificacio EMPTY>
+    <!ATTLIST classificacio edat (TP | 8 | 12 | 16 | 18) #REQUIRED>
+    <!ELEMENT sense_calificar EMPTY>
+    <!ELEMENT sinopsi (#PCDATA)>
+    <!ELEMENT director (#PCDATA)>
+    <!ELEMENT repartiment (actor+)>
+    <!ELEMENT actor (nom, cognom)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT cognom (#PCDATA)>
+    <!ELEMENT web (#PCDATA)>
+    <!ELEMENT cartell (#PCDATA)>
+]>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recetas>
+    <receta nombre_receta= "Galletas de avena" raciones="14">
+        <elementos_necesarios>
+            <ingredientes>
+                <ingrediente cantidad="2">Plátano</ingrediente>
+                <ingrediente cantidad="100g">Copos de avena</ingrediente>
+                <ingrediente camtidad="1 cucharadita">Canela</ingrediente>
+            </ingredientes>
+            <utensilios>
+                <utensilio>Horno</utensilio>
+                <utensilio>Bandeja de horno</utensilio>
+                <utensilio>Papel de horno</utensilio>
+                <utensilio>Plato</utensilio>
+                <utensilio>2 Cucharas</utensilio>
+            </utensilios>
+        </elementos_necesarios>
+        <pasos>
+            <paso orden="primer_paso">Precalentamos el horno a 180 °C con calor arriba y abajo. Por otra parte, aplastamos 2 plátanos en un plato.</paso>
+            <paso orden="segundo_paso">Mezclamos 100 g de copos de avena con los plátanos y 1 cucharadita de canela. Pueden quedar trocitos de plátano en la mezcla, dará más estructura a la galleta.</paso>
+            <paso orden="tercer_paso">Con la ayuda de dos cucharas, repartimos la mezcla en montoncitos del tamaño de una nuez en una bandeja con papel de horno. Aplastamos ligeramente con el dorso de una cuchara.</paso>
+            <paso orden="cuarto_paso">Horneamos las galletas a 180 ºC durante 15-20 minutos.</paso>
+            <paso orden="quinto_paso">Retiramos la bandeja del horno y las dejamos enfriar sin pasarlas a una rejilla, se tienen que enfriar para que se endurezcan.</paso>
+            <paso orden="sexto_paso">Las servimos una vez frías.</paso>
+        </pasos>
+    </receta>
+    <receta nombre_receta= "Galletitas saladas" raciones="8">
+        <elementos_necesarios>
+            <ingredientes>
+                <ingrediente cantidad="200g">Harina de trigo</ingrediente>
+                <ingrediente cantidad="Sí">Sal</ingrediente>
+                <ingrediente camtidad="65ml">Agua</ingrediente>
+                <ingrediente camtidad="65ml">Aceite de girasol</ingrediente>
+            </ingredientes>
+            <utensilios>
+            <utensilio>Horno</utensilio>
+            <utensilio>Nevera</utensilio>
+            <utensilio>Bol</utensilio>
+            <utensilio>Jarra medidora</utensilio>
+            <utensilio>Bandeja de horno</utensilio>
+            <utensilio>Papel de horno</utensilio>
+            <utensilio>Rodillo</utensilio>
+            <utensilio>Pinzel de cocina</utensilio>
+            <utensilio>Cortador de galletas o vaso pequeño</utensilio>
+            <utensilio>Cuchara</utensilio>
+            <utensilio>Cuharadita</utensilio>
+            <utensilio>Tenedor</utensilio>
+            </utensilios>
+        </elementos_necesarios>
+        <pasos>
+            <paso orden="primer_paso">Para hacer la masa de las galletitas saladas volcamos en un bol amplio 200 g de harina de trigo y le añadimos media cucharadita de sal.</paso>
+            <paso orden="segundo_paso">Hacemos un hueco en la harina y vertemos sobre ella 65 ml de agua y 50 ml de aceite de girasol.</paso>
+            <paso orden="tercer_paso">Mezclamos todos los ingredientes de la masa de las galletitas hasta integrarlos y formar una sola masa.</paso>
+            <paso orden="cuarto_paso">Llevamos la masa a reposar a la nevera durante 30 minutos, para poder formar las galletitas.</paso>
+            <paso orden="quinto_paso">Estiramos la masa y cortamos galletitas de unos 3 mm de grosor. Para ello, nos podemos ayudar de un cortador de galletas redondo, aunque si no tenéis uno, podéis recortar las galletas con un vaso pequeño.</paso>
+            <paso orden="sexto_paso">Mezclamos 1 cucharada de aceite de girasol, unos 15 ml, con unas gotas de agua y pintamos cada galleta con esta mezcla. A continuación, espolvoreamos sobre las galletas una pizca de sal.</paso>
+            <paso orden="septimo_paso">Pinchamos cada galletita 3 o 4 veces con un tenedor.</paso>
+            <paso orden="octavo_paso">Horneamos las galletitas durante unos 15 minutos a 180 ºC con calor arriba y abajo.</paso>
+            <paso orden="noveno_paso">Esperamos a que las galletas estén frías y las servimos como parte de un aperitivo o para acompañar nuestros dips favoritos.</paso>
+        </pasos>
+    </receta>
+</recetas>

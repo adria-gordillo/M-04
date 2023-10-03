@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<ofertas_pisos>
+    <piso>
+        <logo_inmobiliaria>Imagenes/logo1.jpg</logo_inmobiliaria>
+        <ubicacion>C/Aiguablava, La Trinitat Nova, Barcelona</ubicacion>
+        <precio tipo="alquiler">
+            <precio_actual>720€</precio_actual>
+            <precio_original></precio_original>
+            <rebaja></rebaja>
+        </precio>
+        <metros_cuadrados>50m</metros_cuadrados>
+        <habitaciones>3</habitaciones>
+        <planta ascensor="False">3º</planta>
+        <descripcion>Text Placeholder</descripcion>
+        <numero_contacto>932 933 042</numero_contacto>
+        <foto_piso>/home/sjo/Imatges/imagen1.jpg</foto_piso>
+        <datos_compradores>
+            <comprador DNI="123456789A">
+                <nombre_completo>Text Placeholder 1<apellidos>Text Placeholder 2, Text Placeholder 3</apellidos></nombre_completo>
+            </comprador>
+            <comprador DNI="123456789B">
+                <nombre_completo>Text Placeholder 1<apellidos>Text Placeholder 2, Text Placeholder 3</apellidos></nombre_completo>
+            </comprador>
+        </datos_compradores>
+    </piso>
+    <piso>
+        <logo_inmobiliaria></logo_inmobiliaria>
+        <ubicacion>C/Portlligat, La Trinitat Nova, Barcelona</ubicacion>
+        <precio tipo="alquiler">
+            <precio_actual>550€</precio_actual>
+            <precio_original>725€</precio_original>
+            <rebaja>24%</rebaja>
+        </precio>
+        <metros_cuadrados>50m</metros_cuadrados>
+        <habitaciones>2</habitaciones>
+        <planta ascensor="True">4º</planta>
+        <descripcion>Text Placeholder</descripcion>
+        <numero_contacto>931 334 598</numero_contacto>
+        <foto_piso>/home/sjo/Imatges/imagen2.jpg</foto_piso>
+        <datos_compradores>
+            <comprador DNI="123456789A">
+                <nombre_completo>Text Placeholder 1<apellidos>Text Placeholder 2, Text Placeholder 3</apellidos></nombre_completo>
+            </comprador>
+            <comprador DNI="123456789B">
+                <nombre_completo>Text Placeholder 1<apellidos>Text Placeholder 2, Text Placeholder 3</apellidos></nombre_completo>
+            </comprador>
+        </datos_compradores>
+    </piso>
+    <piso>
+        <logo_inmobiliaria></logo_inmobiliaria>
+        <ubicacion>C/Portlligat, La Trinitat Nova, Barcelona</ubicacion>
+        <precio tipo="alquiler">
+            <precio_actual>676€</precio_actual>
+            <precio_original>760€</precio_original>
+            <rebaja>11%</rebaja>
+        </precio>
+        <metros_cuadrados>49m</metros_cuadrados>
+        <habitaciones>3</habitaciones>
+        <planta ascensor="False"></planta>
+        <descripcion>Text Placeholder</descripcion>
+        <numero_contacto>912 785 806</numero_contacto>
+        <foto_piso>/home/sjo/Imatges/imagen3.jpg</foto_piso>
+        <datos_compradores>0
+            <comprador DNI="123456789A">
+                <nombre_completo>Text Placeholder 1<apellidos>Text Placeholder 2, Text Placeholder 3</apellidos></nombre_completo>
+            </comprador>
+            <comprador DNI="123456789B">
+                <nombre_completo>Text Placeholder 1<apellidos>Text Placeholder 2, Text Placeholder 3</apellidos></nombre_completo>
+            </comprador>
+        </datos_compradores>
+    </piso>
+    <piso>
+        <logo_inmobiliaria>Imagenes/logo2.jpg</logo_inmobiliaria>
+        <ubicacion>C/Aiguablava, La Trinitat Nova, Barcelona</ubicacion>
+        <precio tipo="compra">
+            <precio_actual>114.000€</precio_actual>
+            <precio_original>119.500€</precio_original>
+            <rebaja>5%</rebaja>
+        </precio>
+        <metros_cuadrados>50m</metros_cuadrados>
+        <habitaciones>2</habitaciones>
+        <planta ascensor="False">1º</planta>
+        <descripcion>Text Placeholder</descripcion>
+        <numero_contacto>935 434 128</numero_contacto>
+        <foto_piso>/home/sjo/Imatges/imagen4.jpg</foto_piso>
+        <datos_compradores>
+            <comprador DNI="123456789A">
+                <nombre_completo>Text Placeholder 1<apellidos>Text Placeholder 2, Text Placeholder 3</apellidos></nombre_completo>
+            </comprador>
+            <comprador DNI="123456789B">
+                <nombre_completo>Text Placeholder 1<apellidos>Text Placeholder 2, Text Placeholder 3</apellidos></nombre_completo>
+            </comprador>
+        </datos_compradores>
+    </piso>
+    <piso>
+        <logo_inmobiliaria>Imagenes/logo3.jpg</logo_inmobiliaria>
+        <ubicacion>C/Fosca, La Trinitat Nova, Barcelona</ubicacion>
+        <precio tipo="compra">
+            <precio_actual>160.600€</precio_actual>
+            <precio_original></precio_original>
+            <rebaja></rebaja>
+        </precio>
+        <metros_cuadrados>74m</metros_cuadrados>
+        <habitaciones>2</habitaciones>
+        <planta ascensor="True">2º</planta>
+        <descripcion>Text Placeholder</descripcion>
+        <numero_contacto>932 991 035</numero_contacto>
+        <foto_piso>/home/sjo/Imatges/imagen5.jpg</foto_piso>
+        <datos_compradores>
+            <comprador DNI="123456789A">
+                <nombre_completo>Text Placeholder 1<apellidos>Text Placeholder 2, Text Placeholder 3</apellidos></nombre_completo>
+            </comprador>
+            <comprador DNI="123456789B">
+                <nombre_completo>Text Placeholder 1<apellidos>Text Placeholder 2, Text Placeholder 3</apellidos></nombre_completo>
+            </comprador>
+        </datos_compradores>
+    </piso>
+</ofertas_pisos>

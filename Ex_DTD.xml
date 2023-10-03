@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Empresa [
+    <!ELEMENT Empresa (Empleado+)>
+    <!ELEMENT Empleado (Apellido, Nombre, NumEmpleado, Email, Telefono, Direccion)>
+    <!ELEMENT Apellido (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT NumEmpleado (#PCDATA)>
+    <!ELEMENT Email (#PCDATA)>
+    <!ELEMENT Telefono (#PCDATA)>
+    <!ELEMENT Direccion (Calle, Ciudad, CP)>
+    <!ELEMENT Calle (#PCDATA)>
+    <!ELEMENT Ciudad (#PCDATA)>
+    <!ELEMENT CP (#PCDATA)>
+]>
+
+<Empresa>
+  <Empleado>
+    <Apellido>Perez</Apellido>
+    <Nombre>Juan</Nombre>
+    <NumEmpleado>1234567890</NumEmpleado>
+    <Email>juanperez@gmail.com</Email>
+    <Telefono>666 555 444</Telefono>
+    <Direccion>
+      <Calle>Carrer de Pau Claris, 121</Calle>
+      <Ciudad>Barcelona</Ciudad>
+      <CP>08009</CP>
+    </Direccion>  
+  </Empleado>
+</Empresa>
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Empresa [
+    <!ELEMENT Empresa (Empleado+)>
+    <!ELEMENT Empleado (Apellido, Apellido, Nombre, NumEmpleado, (Email | Telefono), Direccion>
+    <!ELEMENT Apellido (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT NumEmpleado (#PCDATA)>
+    <!ELEMENT Email (#PCDATA)>
+    <!ELEMENT Telefono (#PCDATA)>
+    <!ELEMENT Direccion (Calle, Ciudad, CP)>
+    <!ELEMENT Calle (#PCDATA)>
+    <!ELEMENT Ciudad (#PCDATA)>
+    <!ELEMENT CP (#PCDATA)>
+]>
+
+<Empresa>
+  <Empleado>
+    <Apellido>Perez</Apellido>
+    <Nombre>Juan</Nombre>
+    <NumEmpleado>1234567890</NumEmpleado>
+    <Telefono>666 555 444</Telefono>
+    <Direccion>
+      <Calle>Carrer de Pau Claris, 121</Calle>
+      <Ciudad>Barcelona</Ciudad>
+      <CP>08009</CP>
+    </Direccion>  
+  </Empleado>
+</Empresa>
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE matricula [
+    <!ELEMENT matricula (ciclo, alumnos)>
+    <!ELEMENT ciclo (#PCDATA)>
+    <!ELEMENT alumnos (alumno)+>
+    <!ELEMENT alumno (nombre, year, asignaturas)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+    <!ELEMENT asignaturas (asignatura)+>
+    <!ELEMENT asignatura (#PCDATA)>
+]>
+
+<matricula>
+    <ciclo>DAM</ciclo>
+    <alumnos>
+        <alumno>
+            <nombre>A</nombre>
+            <year>2023</year>
+            <asignaturas>
+                <asignatura>B</asignatura>
+            </asignaturas>
+        </alumno>
+    </alumnos>
+</matricula>
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<!DOCTYPE persona [
+	<!ELEMENT persona (nombre, mujer, fecha_de_nacimiento, ciudad)>
+	<!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT mujer EMPTY>
+	<!ELEMENT fecha_de_nacimiento EMPTY>
+    <!ATTLIST fecha_de_nacimiento dia CDATA #REQUIERED>
+    <!ATTLIST fecha_de_nacimiento mes CDATA #REQUIERED>
+    <!ATTLIST fecha_de_nacimiento anyo CDATA #FIXED "2023">
+    <!ELEMENT ciudad (#PCDATA)>
+]>
+
+<persona>
+   <nombre>Maria</nombre>
+   <mujer/>
+   <fecha_de_nacimiento dia="21" mes="10" anyo="2023"></fecha_de_nacimiento>
+   <ciudad>Bilbao</ciudad>
+</persona>
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Empresa [
+    <!ELEMENT Empresa (Empleado+)>
+    <!ELEMENT Empleado (Apellido, Apellido, Nombre, (Email | Telefono), Direccion>
+    <!ATTLIST Empleado NumEmpleado CDATA>
+    <!ELEMENT Apellido (#PCDATA)>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Email (#PCDATA)>
+    <!ELEMENT Telefono (#PCDATA)>
+    <!ELEMENT Direccion EMPTY>
+    <!ATTLIST Direccion Calle CDATA #IMPPLIED>
+    <!ATTLIST Direccion Ciudad CDATA #REQUIERED>
+    <!ATTLIST Direccion CP CDATA #REQUIERED>
+]>
+
+<Empresa>
+  <Empleado NumEmpleado="1234567890">
+    <Apellido>Perez</Apellido>
+    <Nombre>Juan</Nombre>
+    <Telefono>666 555 444</Telefono>
+    <Direccion Ciudad="Barcelona" CP="08009">
+    </Direccion>  
+  </Empleado>
+</Empresa>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Empresa [
+    <!ELEMENT libreria (libro+, ticket*)>
+    <!ELEMENT libro EMPTY>
+    <!ATTLIST libro ISBN ID #REQUIERED>
+    <!ATTLIST libro titulo CDATA #REQUIERED>
+    <!ELEMENT ticket (linea+)>
+    <!ELEMENT linea EMPTY>
+    <!ATTLIST linea ref IDREFs #REQUIERED>
+]>
+
+<libreria>
+	<libro ISBN="A9788497592581" titulo="El origen de las especies"/>
+  	<libro ISBN="A978849759251" titulo="La Celestina"/>
+  	<libro ISBN="A8481301264" titulo="El nombre de la Rosa"/>
+    <ticket>
+        <linea ref="A978849759251"/>
+        <linea ref="A8481301264"/>
+    </ticket>
+</libreria>
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE matricula [
+    <!ELEMENT matricula (curso)>
+    <!ELEMENT curso EMPTY>
+    <!ATTLIST curso year (2019 | 2020 | 2021) #REQUIERED>
+    <!ATTLIST curso mes (enero | febrero | marzo | abril | mayo | junio | julio | agosto | septiembre | octubre | noviembre | diciembre) #REQUIERED>
+]>
+
+<matricula>
+      <curso year="2019" mes="abril"/>
+</matricula>
